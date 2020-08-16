@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+<link href="fonts/stylesheet.css" rel="stylesheet">
+<link  href="css/style.css" rel="stylesheet">
+
+<title>Прокат Велосипедов</title>
+</head>
+<body>
+
+
+    <!-- li*4>a[href=#]+p.text -->
+
+<header class="header container"> 
+    <div class="header_main">
+        <div class="header_logo">
+           <!-- <img src="img/VeloRent.png" class="logo"  alt="VeloRent"> -->
+        </div>
+        <nav>
+             <ul class="header_navigation fonts_main">
+                <li class="li1"><a href="#">Цены</a></li>
+                <li class="li2"><a href="#">Велосипеды</a></li>
+                <li class="li3"><a href="#">Оборудование</a></li>
+                <li class="li4"><a href="#">Пункты аренды</a></li>
+             </ul>
+        </nav>
+
+        <div class="header_tel fonts_main">
+            <a href="tel:375333333333">+375 33 333-33-33</a>
+        </div>
+        
+    </div>
+    <div class="header_wrapper fonts_main">
+        <div class="header_wrapper_content">
+            <p>Прокат велосипедов</p>
+            <p>в Минске за 5 руб/час</p>
+        </div>
+       
+            <button class="button fonts_main" onclick="open_modal_window()">
+                <span class="button_text">
+                    Забронировать
+                </span>
+            </button>
+</header>
+
+<main class="main">
+
+        <div id="modal_content" class="modal_content">
+            
+        </div>
+
+        </div>
+        
+        <section class="main_content container">
+           <div class="main_content_subtitle fonts_main">
+            <p>Почему стоит брать велосипеды в прокат у нас</p>
+           </div>
+           <div class="main_content_cards fonts_main">
+               <div class="main_content_card">
+                    <img src="/img/Vector.png" class="icon_card">
+                    <div class="main_content_card_text">
+                        <p>Новые велосипеды</p>
+                    </div>
+                    <div class="main_content_card_text2">
+                        <p>Все велосипеды 2017 года выпуска и новее</p>
+                    </div>
+                </div>
+
+                <div class="main_content_card">
+                    <img src="/img/place.png" class="icon_card">
+                    <div class="main_content_card_text">
+                        <p>Удобное расположение</p>
+                    </div>
+                    <div class="main_content_card_text2">
+                        <p>3 пункта аренды рядом с метро 
+                            и велодорожками</p>
+                    </div>
+                </div>
+
+                <div class="main_content_card">
+                    <img src="/img/discount.png" class="icon_card">
+                    <div class="main_content_card_text">
+                        <p>Скидка со 2 часа</p>
+                    </div>
+                    <div class="main_content_card_text2">
+                        <p>Каждый час аренды стоит дешевле</p>
+                    </div>
+                </div>
+
+                <div class="main_content_card">
+                    <img src="/img/id-card.png" class="icon_card">
+                    <div class="main_content_card_text">
+                        <p>Простой залог</p>
+                    </div>
+                    <div class="main_content_card_text2">
+                        <p>Паспорт, права или деньги</p>
+                    </div>
+                </div>
+            
+
+
+            </div>
+           
+        </section>
+    
+        <section class="price container fonts_main">
+            <div class="price_text">
+                <p>Цены</p>
+            </div>
+            <div class="price_text_time">
+                <p>1 час</p>
+                <p>2 часа</p>
+                <p>3 часа</p>
+                <p>24 часа</p>
+            </div>
+            <div class="price_text_line">
+                <img src="/img/Line.png" alt="line">
+            </div>
+            <div class="price_text_prices price_text_time"> 
+                <p>5 руб</p>
+                <p>8 руб</p>
+                <p>10 руб</p>
+                <p>15 руб</p>
+            </div>
+        </section>
+
+    <section class="cards container fonts_main">
+            <div class="cards_title">
+                <p>Наши велосипеды</p>
+            </div>
+            
+            <div class="cards_velo_title">
+                <p>Городские</p>
+            </div>
+
+        <div class="cards_wraper">
+
+            <div class="cards_wraper_content ">
+
+                <!-- Card-1 -->
+            
+                <div class="cards_wraper_content_display">
+                    <img src="/img/Stels_Navigator 325 28 Z010.1.png" alt="velo">
+
+                    <div class="cards_wraper_content_display_title">
+                        <p>Stels Navigator 325</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            28”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            17,3 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний, ножной
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        
+
+            <div class="cards_wraper_content">
+
+               <!-- Card-2 -->
+                
+                <div class="cards_wraper_content_display">
+                    <img src="/img/AIST Jazz 2.1.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>AIST Jazz 2.0</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            26”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            17,3 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            ободной
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards_wraper_content">
+
+                    <!-- Card-3 -->
+                    
+                <div class="cards_wraper_content_display">
+                    <img src="/img/Forward Talica 2.1.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>Forward Talica 2.0</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            28”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            16,3 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний, ножной
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>    
+                </div>
+            </div>
+
+            <div class="cards_wraper_content">
+
+                        <!-- Card-4 -->
+                        
+                <div class="cards_wraper_content_display">
+                    <img src="/img/AIST Avenue 1.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>AIST Avenue 1.0</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            26”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            15,1 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            ободной
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>        
+                </div>
+            </div>
+
+                <div class="cards_wraper_content">
+
+                        <!-- Card-5 -->
+                        
+                    <div class="cards_wraper_content_display">
+                    <img src="/img/AIST 28-245.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>AIST 28-245</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            28”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            17,1 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            ободной
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>       
+                    </div>
+                </div>
+
+                <div class="cards_wraper_content">
+
+                        <!-- Card-6 -->
+                        
+                    <div class="cards_wraper_content_display">
+                    <img src="/img/Cannondale Quick LTD 2.1.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>Cannondale Quick LTD</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            28”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            17,3 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            дисковый
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+                        
+                    </div>        
+                    </div>
+                </div>
+             </div>
+        </div>
+
+        <div class="cards_velo_title">
+            <p>Горные</p>
+        </div>
+
+        <div class="cards_wraper">
+
+            <div class="cards_wraper_content ">
+
+                <!-- Card-1 -->
+            
+                <div class="cards_wraper_content_display">
+                    <img src="/img/Greenway Scorpion 29.png" alt="velo">
+
+                    <div class="cards_wraper_content_display_title">
+                        <p>Greenway Scorpion 29</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            29”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            18,6 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            дисковый
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        
+
+            <div class="cards_wraper_content">
+
+               <!-- Card-2 -->
+                
+                <div class="cards_wraper_content_display">
+                    <img src="/img/337_navigator-930-md-29-v010-neon-red-black-matt.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>Stels Navigator 900</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            29”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            18,2 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            дисковый
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards_wraper_content">
+
+                    <!-- Card-3 -->
+                    
+                <div class="cards_wraper_content_display">
+                    <img src="/img/velosiped-forward-sporting-20-29-disc_0-1200x750.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>Forward Sporting 29</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            28”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            17,3 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            дисковый
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>    
+                </div>
+            </div>
+
+            <div class="cards_wraper_content">
+
+                        <!-- Card-4 -->
+                        
+                <div class="cards_wraper_content_display">
+                    <img src="/img/119bb374b2b09efe7e88099a00c45b53.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>Cube AIM 29</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            29”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            14,9 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            дисковый
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>        
+                </div>
+            </div>
+
+                <div class="cards_wraper_content">
+
+                        <!-- Card-5 -->
+                        
+                    <div class="cards_wraper_content_display">
+                    <img src="/img/50f4c32e61c3f86823b3f181ce27dcc6.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>Cronus Ranger</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            29”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            17,3 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            дисковый
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>       
+                    </div>
+                </div>
+
+                <div class="cards_wraper_content">
+
+                        <!-- Card-6 -->
+                        
+                    <div class="cards_wraper_content_display">
+                    <img src="/img/8638009935a7f86bae4140_original.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>Cannondale Quick LTD</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            29”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            14,8 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            дисковый
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+                        
+                    </div>        
+                    </div>
+                </div>
+            
+        </div> <!-- /end wraper -->
+
+        <div class="cards_velo_title">
+            <p>Детские</p>
+        </div>
+
+        <div class="cards_wraper">
+
+            <div class="cards_wraper_content ">
+
+                <!-- Card-1 -->
+            
+                <div class="cards_wraper_content_display">
+                    <img src="/img/AIST Pirate 1.png" alt="velo">
+
+                    <div class="cards_wraper_content_display_title">
+                        <p>Greenway Scorpion 29</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            29”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            18,6 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            дисковый
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        
+
+            <div class="cards_wraper_content">
+
+               <!-- Card-2 -->
+                
+                <div class="cards_wraper_content_display">
+                    <img src="/img/3f49fda9a8e55c10224dc605455f8193.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>Stels Navigator 900</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            29”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            18,2 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            дисковый
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="cards_wraper_content">
+
+                    <!-- Card-3 -->
+                    
+                <div class="cards_wraper_content_display">
+                    <img src="/img/Stels Jet 14 Z010.1.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>Forward Sporting 29</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            28”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            17,3 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            дисковый
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>    
+                </div>
+            </div>
+
+            <div class="cards_wraper_content">
+
+                        <!-- Card-4 -->
+                        
+                <div class="cards_wraper_content_display">
+                    <img src="/img/Delta Pilot 170.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>Cube AIM 29</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            29”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            14,9 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            дисковый
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>        
+                </div>
+            </div>
+
+                <div class="cards_wraper_content">
+
+                        <!-- Card-5 -->
+                        
+                    <div class="cards_wraper_content_display">
+                    <img src="/img/Fuji Dynamite 20.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>Cronus Ranger</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            29”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            17,3 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            дисковый
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>       
+                    </div>
+                </div>
+
+                <div class="cards_wraper_content">
+
+                        <!-- Card-6 -->
+                        
+                    <div class="cards_wraper_content_display">
+                    <img src="/img/Altair City 20.1.png" alt="velo">
+                    <div class="cards_wraper_content_display_title">
+                        <p>Cannondale Quick LTD</p>
+
+                    </div>
+                    <div class="cards_wraper_content_display_description">
+                        <div class="cards_wraper_content_display_description_wheels">
+                            Колеса
+                            <span class="description_line"></span>
+                            29”
+                        </div>
+                        <div class="cards_wraper_content_display_description_weight">
+                            Вес
+                            <span class="description_line"></span>
+                            14,8 кг
+                        </div>
+                        <div class="cards_wraper_content_display_description_break">
+                            Тормоз
+                            <span class="description_line"></span>
+                            Задний и передний, 
+                            дисковый
+                        </div>
+
+                        <div class="cards_wraper_content_display_description_button">
+                            <button class="button fonts_main">
+                                <span class="button_text">
+                                    Забронировать
+                                </span>
+                            </button>
+                        </div>
+                        
+                    </div>        
+                    </div>
+                </div>
+            
+        </div> <!-- /end wraper -->
+       
+    </section>
+
+    <section class="rent container fonts_main">
+        <div class="rent_title">
+            <p>Как взять велосипед в прокат</p>
+        </div>
+
+        <div class="rent_instruct container">
+            <div class="rent_instruct_item">
+                <div class="rent_instruct_item_img">
+                    <img src="img/Group 7.1.png" alt="rent_img" class="margin_fix">
+                </div>
+                <div class="rent_instruct_item_description">
+                    <p>Забронировать</p>
+                </div>
+            </div>
+
+            <div class="rent_instruct_row_left">
+                <img src="img/Arrow.png" alt="img">
+            </div>
+
+            <div class="rent_instruct_item">
+                <div class="rent_instruct_item_img">
+                    <img src="img/id-card (1).png" alt="rent_img">
+                </div>
+                <div class="rent_instruct_item_description">
+                    <p>Оставить в залог</p>
+                </div>
+            </div>
+
+            <div class="rent_instruct_row_center">
+                <img src="img/Arrow.png" alt="img">
+            </div>
+
+            <div class="rent_instruct_item">
+                <div class="rent_instruct_item_img">
+                    <img src="img/bike 2.1.png" alt="rent_img">
+                </div>
+                <div class="rent_instruct_item_description">
+                    <p>Катаетесь</p>
+                </div>
+            </div>
+
+            <div class="rent_instruct_row_right">
+                <img src="img/Arrow.png" alt="img">
+            </div>
+
+            <div class="rent_instruct_item">
+
+                <div class="rent_instruct_item_img">
+                    <img src="img/high-five.png" alt="rent_img">
+                </div>
+
+                <div class="rent_instruct_item_description">
+                    <p>Возвращаете и получате</p>
+                        <p>залог</p>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="equipment container fonts_main">
+        <div class="equipment_title">
+            <p>Дополнительное оборудование</p>
+        </div>
+
+        <div class="equipment_wraper">
+
+            <div class="item item_helmet">
+                <div class="item_img">
+                    <img src="/img/big_abus-tec-tical-21-velvet-black-m-_15419_pic.png" class="helmet_img" alt="helmet">
+                </div>
+                <div class="item_title">
+                    <p>Шлем</p>
+                </div>
+                <div class="item_price">
+                    <p>2 руб</p>
+                </div>
+                <div class="item_time">
+                    <p>На время катания</p>
+                </div>
+            </div>
+
+            <div class="item item_lock">
+                <div class="item_img">
+                    <img src="/img/225058-10-100-1500x1500.png" class="lock_img" alt="lock">
+                </div>
+                <div class="item_title">
+                    <p>Велозамок</p>
+                </div>
+                <div class="item_price">
+                    <p>1 руб</p>
+                </div>
+                <div class="item_time">
+                    <p>На время катания</p>
+                </div>
+            </div>
+
+            <div class="item item_armchair">
+                <div class="item_img">
+                    <img src="/img/807705281_thule-detskoe.png" class="armchair_img" alt="armchair">
+                </div>
+                <div class="item_title">
+                    <p>Велокресло</p>
+                </div>
+                <div class="item_price">
+                    <p>6 руб</p>
+                </div>
+                <div class="item_time">
+                    <p>На время катания</p>
+                </div>
+            </div>
+
+            <div class="item item_trailer">
+                <div class="item_img">
+                    <img src="/img/vic1302-1400-2.png" class="trailer_img" alt="trailer">
+                </div>
+                <div class="item_title">
+                    <p>Велоприцеп</p>
+                </div>
+                <div class="item_price">
+                    <p>8 руб</p>
+                </div>
+                <div class="item_time">
+                    <p>На время катания</p>
+                </div>
+            </div>
+
+            <div class="item item_lamp">
+                <div class="item_img">
+                    <img src="/img/velofonaronrideflame16059-1340x1340.png" class="lamp_img" alt="lamp">
+                </div>
+                <div class="item_title">
+                    <p>Велофонарь</p>
+                </div>
+                <div class="item_price">
+                    <p>1 руб</p>
+                </div>
+                <div class="item_time">
+                    <p>На время катания</p>
+                </div>
+            </div>
+
+            <div class="item item_gloves">
+                <div class="item_img">
+                    <img src="/img/010731644ad78f14d6af077fab16.png" class="gloves_img" alt="gloves">
+                </div>
+                <div class="item_title">
+                    <p>Перчатки</p>
+                </div>
+                <div class="item_price">
+                    <p>2 руб</p>
+                </div>
+                <div class="item_time">
+                    <p>На время катания</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="addresses container fonts_main">
+
+        <div class="addresses_title">
+            <p>Пункты аренды</p>
+        </div>
+
+        
+        <div class="addresses_wrapper">
+            <div class="content">
+                <div class="content_img">
+                    <img src="img/place (1).png" alt="place_1">
+                </div>
+                <div class="content_description">
+                    <p>м. Немига, пр. Победителей, 2</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content_img">
+                    <img src="img/place (2).png" alt="place_2">
+                </div>
+                <div class="content_description">
+                    <p>м. Первомайская, ул. Ленина, 21</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content_img">
+                    <img src="img/place (3).png" alt="place_3">
+                </div>
+                <div class="content_description">
+                    <p>м. Партизанская, ул. Жилуновича, 15</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+    
+<footer class="footer container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.757858289035!2d27.556111481165537!3d53.90050764404619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfc1f0c10db3%3A0x3c62938f02eb9022!2z0JPQo9Cc!5e0!3m2!1sru!2sua!4v1597456375216!5m2!1sru!2sua" width="1140" height="575" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</footer>
+
+
+
+</body>
+<script src="client.js"></script>
+<!-- <script src="static/bootstrap.min.js"></script> -->
+</html>
+
+
+
+

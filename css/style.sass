@@ -1,0 +1,436 @@
+@import "_fonts.sass"
+@import "_vars.sass"
+
+*
+    margin: 0
+    padding: 0
+
+.anim
+    opacity: 1
+    transition: 1s opacity
+
+.anim2
+    opacity: 1
+    transition: 1s opacity
+//Допилить анимацию
+     
+
+//Основной шрифт
+.fonts_main 
+    font-family: Ubuntu
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 21px
+    
+a   
+    text-decoration: none
+    color: #282832
+    cursor: pointer
+    &:hover
+        text-decoration: none
+
+//контейнер    
+.container
+    max-width: 1170px
+    margin: 0 auto
+
+
+//Основная кнопка
+.button
+    width: 380px
+    height: 70px 
+    border-radius: 4px
+    background: #00CD4A
+    border-style: none
+    .button_text
+        font-weight: 500
+        color: #ffffff
+
+// .modal_content
+//     display: none
+//     position: fixed
+//     width: 558px
+//     height: 378px
+//     left: 40%
+//     top: 40%
+//     background-color: black
+
+.header
+    height: 620px
+    background: url('../img/b1.png')  no-repeat 
+    //Анимация, плавный переход
+    
+
+    &_main
+        display: flex
+        padding: 31px 40px 0px 40px
+        align-items: center
+    &_logo
+        background: url
+        margin-right: 115px
+        background: url('../img/VeloRent.png') no-repeat 
+        width: 134px
+        height: 34px
+        padding-right: 115px
+    &_navigation
+        display: flex
+        list-style: none
+        width: 515px
+        margin: 0px
+        .li2, .li3, .li4
+            margin-left: 33px
+    &_tel
+        font-size: 24px
+        line-height: 28px
+        margin-left: 105px
+    &_wrapper
+        display: flex
+        flex-direction: column
+        width: 540px
+        //Сверху справа снизу слева
+        padding: 68px 100px 0px 310px 
+        height: 500px
+        &_content
+            p
+                font-weight: 500
+                font-size: 50px
+                line-height: 57px
+                
+        .button
+            width: 380px
+            height: 70px 
+            margin-top: 247px
+            margin-left: 68px
+            border-radius: 4px
+            background: #00CD4A
+            border-style: none
+            .button_text
+                font-weight: 500
+                font-size: 30px
+                line-height: 34px
+                color: #ffffff
+.main
+
+    &_content
+        margin: 0 auto
+        padding: 40px 38px 0px 0px
+        //Сверху справа снизу слева
+        display: flex
+        align-items: center
+        flex-direction: column
+        width: 1535px
+        &_subtitle
+            p
+                font-weight: 500
+                font-size: 30px
+                line-height: 34px
+                margin-bottom: 40px
+        &_cards
+            display: flex
+            flex-wrap: wrap
+        &_card
+            display: flex
+            width: 250px
+            flex-direction: column
+            align-items: center
+            flex-wrap: wrap
+            text-align: center
+            margin-left: 25px
+            .icon_card
+                margin-top: 0px
+                &:first-child
+                    
+                    margin-bottom: 10px //костыль
+
+                 
+                
+            &_text
+                margin-top: 12px
+                font-size: 20px
+                line-height: 23px
+            &_text2
+                margin-top: 10px
+                font-size: 16px
+                line-height: 18px
+                
+
+.price
+    display: flex
+    flex-direction: column
+    align-items: center
+    &_text
+        padding: 60px 31px 41px 0px
+        font-weight: 500
+        font-size: 30px
+        line-height: 34px
+        &_time
+            display: flex
+            justify-content: space-between
+            width: 980px
+            p
+                font-size: 24px
+                line-height: 28px
+        &_line
+            margin-top: 10px
+            margin-right: 24px
+            margin-bottom: 5px
+        &_prices
+            margin-right: 5px
+            //Наследует от &_time
+
+
+.description_line
+    border-bottom:  1px dashed #C4C4C7
+    
+
+.cards
+    display: flex //Посмотреть какие команды ненужны випилить
+    flex-direction: column
+    flex-wrap: wrap
+    //justify-content: center
+    align-items: center
+    //align-content: center
+    
+
+    &_title
+        padding: 60px 70px 0px 0px
+        font-weight: 500
+        font-size: 30px
+        line-height: 34px
+
+    &_velo_title
+        font-weight: 500
+        font-size: 24px
+        line-height: 28px
+        color: #00CD4A
+        margin-left: 42px
+        width: 100%
+        margin-top: 20px
+        padding-bottom: 20px
+        
+    &_wraper
+        display: flex
+        flex-wrap: wrap
+        margin-bottom: 20px //допилить
+
+        &_content
+            display: flex //Посмотреть какие команды ненужны випилить
+            flex-direction: column
+            margin-left: 20px
+            margin-bottom: 20px
+            width: 340px
+            min-height: 432px
+            border: 1px solid #C4C4C7
+            justify-content: space-between
+
+            &_display
+                display: flex
+                flex-direction: column
+                align-items: center
+                &_title
+                    font-size: 24px
+                    line-height: 28px
+                    width: 100%
+                    margin-left: 58px
+                    margin-top: 26px
+                
+                &_description
+                    display: flex
+                    flex-direction: column
+                    font-weight: 300
+                    font-size: 16px
+                    line-height: 18px
+                    width: 100%
+                    margin-left: 58px
+                    margin-bottom: 20px
+                    margin-top: 20px
+
+                &_description_wheels
+                    display: flex
+                    margin-bottom: 4px //p-p for deststop
+                    .description_line
+                        width: 35px
+                &_description_weight
+                    display: flex
+                    margin-bottom: 4px
+                    .description_line
+                        width: 61px
+                &_description_break
+                    display: flex
+                    .description_line
+                        width: 32px
+                &_description_button
+                    margin-top: 30px
+                    .button
+                        width: 280px
+                        height: 44px
+
+.margin_fix
+    margin-bottom: 5px //Костыль
+
+.rent
+    display: flex
+    align-items: center
+    flex-direction: column
+    //align-content: space-between
+    &_title
+        font-weight: 500
+        font-size: 30px
+        line-height: 34px
+        margin-top: 37px
+        margin-right: 18px
+        margin-bottom: 44px
+
+    &_instruct
+        display: flex   
+        width: 100%
+        margin-left: 100px
+        &_item
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+            &_img
+                margin-bottom: 24px
+
+            
+            
+            &_description
+                font-size: 20px
+                line-height: 23px
+        &_row_left
+            margin-top: 20px
+            margin-left: 47px
+            margin-right: 22px
+        &_row_center
+            
+            margin-top: 20px
+            margin-left: 45px
+            margin-right: 60px
+           
+        &_row_right
+            
+            margin-top: 20px
+            margin-left: 70px
+           
+
+
+
+.equipment
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: center
+    &_title
+        font-weight: 500
+        font-size: 30px
+        line-height: 34px
+        margin-top: 60px
+        margin-bottom: 44px
+
+    &_wraper
+        display: flex
+        flex-wrap: wrap
+        margin-left: 0px
+        
+        .item
+            display: flex
+            flex-direction: column
+            align-items: center
+            //margin-right: 50px
+            margin-bottom: 30px
+
+        
+            
+            .item_img
+                // margin-bottom: 18px
+
+            .helmet_img
+                margin-bottom: 18px
+            .lock_img
+                margin-bottom: 48px
+            .armchair_img
+                margin-bottom: 7px
+
+            .trailer_img
+                margin-bottom: 16px
+
+            .lamp_img
+                margin-bottom: 27px
+
+            .gloves_img
+                margin-bottom: 25px
+
+
+                
+                
+            .item_title
+                font-size: 24px
+                line-height: 28px
+                margin-bottom: 9px
+            .item_price
+                font-size: 20px
+                line-height: 23px
+                color: #00CD4A
+                margin-bottom: 9px
+            .item_time
+                font-weight: 300
+                font-size: 16px
+                line-height: 18px
+        
+
+.item_helmet
+    margin-left: 140px
+
+.item_lock
+    margin-left: 180px
+
+.item_armchair
+    margin-left: 110px
+    
+.item_trailer
+    margin-left: 110px
+    
+.item_lamp
+    margin-left: 148px
+
+.item_gloves
+    margin-left: 180px            
+
+
+.addresses
+    display: flex
+    flex-direction: column
+    align-items: center
+    &_title
+        margin-top: 40px
+        font-size: 30px
+        line-height: 34px
+        margin-bottom: 42px
+    &_wrapper
+        display: flex
+        flex-direction: column
+        margin-bottom: 48px
+        .content
+            display: flex
+            align-items: center
+            margin-bottom: 20px
+            .content_img
+                margin-right: 15px
+            .content_description
+                font-size: 24px
+                line-height: 28px
+
+
+.footer
+    max-width: 1140px        
+            
+
+    
+
+
+
+
+
+@import "_media.sass"

@@ -1,0 +1,647 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.anim {
+  opacity: 1;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
+}
+
+.anim2 {
+  opacity: 1;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
+}
+
+.fonts_main {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+a {
+  text-decoration: none;
+  color: #282832;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.button {
+  width: 380px;
+  height: 70px;
+  border-radius: 4px;
+  background: #00CD4A;
+  border-style: none;
+}
+
+.button .button_text {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.header {
+  height: 620px;
+  background: url("../img/b1.png") no-repeat;
+}
+
+.header_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 31px 40px 0px 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_logo {
+  background: url;
+  margin-right: 115px;
+  background: url("../img/VeloRent.png") no-repeat;
+  width: 134px;
+  height: 34px;
+  padding-right: 115px;
+}
+
+.header_navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 515px;
+  margin: 0px;
+}
+
+.header_navigation .li2, .header_navigation .li3, .header_navigation .li4 {
+  margin-left: 33px;
+}
+
+.header_tel {
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: 105px;
+}
+
+.header_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 540px;
+  padding: 68px 100px 0px 310px;
+  height: 500px;
+}
+
+.header_wrapper_content p {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 57px;
+}
+
+.header_wrapper .button {
+  width: 380px;
+  height: 70px;
+  margin-top: 247px;
+  margin-left: 68px;
+  border-radius: 4px;
+  background: #00CD4A;
+  border-style: none;
+}
+
+.header_wrapper .button .button_text {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+  color: #ffffff;
+}
+
+.main_content {
+  margin: 0 auto;
+  padding: 40px 38px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1535px;
+}
+
+.main_content_subtitle p {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+  margin-bottom: 40px;
+}
+
+.main_content_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main_content_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  margin-left: 25px;
+}
+
+.main_content_card .icon_card {
+  margin-top: 0px;
+}
+
+.main_content_card .icon_card:first-child {
+  margin-bottom: 10px;
+}
+
+.main_content_card_text {
+  margin-top: 12px;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.main_content_card_text2 {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price_text {
+  padding: 60px 31px 41px 0px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.price_text_time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 980px;
+}
+
+.price_text_time p {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.price_text_line {
+  margin-top: 10px;
+  margin-right: 24px;
+  margin-bottom: 5px;
+}
+
+.price_text_prices {
+  margin-right: 5px;
+}
+
+.description_line {
+  border-bottom: 1px dashed #C4C4C7;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards_title {
+  padding: 60px 70px 0px 0px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+}
+
+.cards_velo_title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #00CD4A;
+  margin-left: 42px;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cards_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.cards_wraper_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 340px;
+  min-height: 432px;
+  border: 1px solid #C4C4C7;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards_wraper_content_display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards_wraper_content_display_title {
+  font-size: 24px;
+  line-height: 28px;
+  width: 100%;
+  margin-left: 58px;
+  margin-top: 26px;
+}
+
+.cards_wraper_content_display_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  width: 100%;
+  margin-left: 58px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.cards_wraper_content_display_description_wheels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.cards_wraper_content_display_description_wheels .description_line {
+  width: 35px;
+}
+
+.cards_wraper_content_display_description_weight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.cards_wraper_content_display_description_weight .description_line {
+  width: 61px;
+}
+
+.cards_wraper_content_display_description_break {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards_wraper_content_display_description_break .description_line {
+  width: 32px;
+}
+
+.cards_wraper_content_display_description_button {
+  margin-top: 30px;
+}
+
+.cards_wraper_content_display_description_button .button {
+  width: 280px;
+  height: 44px;
+}
+
+.margin_fix {
+  margin-bottom: 5px;
+}
+
+.rent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rent_title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+  margin-top: 37px;
+  margin-right: 18px;
+  margin-bottom: 44px;
+}
+
+.rent_instruct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-left: 100px;
+}
+
+.rent_instruct_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.rent_instruct_item_img {
+  margin-bottom: 24px;
+}
+
+.rent_instruct_item_description {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.rent_instruct_row_left {
+  margin-top: 20px;
+  margin-left: 47px;
+  margin-right: 22px;
+}
+
+.rent_instruct_row_center {
+  margin-top: 20px;
+  margin-left: 45px;
+  margin-right: 60px;
+}
+
+.rent_instruct_row_right {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+.equipment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.equipment_title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+  margin-top: 60px;
+  margin-bottom: 44px;
+}
+
+.equipment_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 0px;
+}
+
+.equipment_wraper .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.equipment_wraper .item .helmet_img {
+  margin-bottom: 18px;
+}
+
+.equipment_wraper .item .lock_img {
+  margin-bottom: 48px;
+}
+
+.equipment_wraper .item .armchair_img {
+  margin-bottom: 7px;
+}
+
+.equipment_wraper .item .trailer_img {
+  margin-bottom: 16px;
+}
+
+.equipment_wraper .item .lamp_img {
+  margin-bottom: 27px;
+}
+
+.equipment_wraper .item .gloves_img {
+  margin-bottom: 25px;
+}
+
+.equipment_wraper .item .item_title {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 9px;
+}
+
+.equipment_wraper .item .item_price {
+  font-size: 20px;
+  line-height: 23px;
+  color: #00CD4A;
+  margin-bottom: 9px;
+}
+
+.equipment_wraper .item .item_time {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.item_helmet {
+  margin-left: 140px;
+}
+
+.item_lock {
+  margin-left: 180px;
+}
+
+.item_armchair {
+  margin-left: 110px;
+}
+
+.item_trailer {
+  margin-left: 110px;
+}
+
+.item_lamp {
+  margin-left: 148px;
+}
+
+.item_gloves {
+  margin-left: 180px;
+}
+
+.addresses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.addresses_title {
+  margin-top: 40px;
+  font-size: 30px;
+  line-height: 34px;
+  margin-bottom: 42px;
+}
+
+.addresses_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.addresses_wrapper .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.addresses_wrapper .content .content_img {
+  margin-right: 15px;
+}
+
+.addresses_wrapper .content .content_description {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.footer {
+  max-width: 1140px;
+}
+
+@media (max-width: 1080px) {
+  .header {
+    background: url("../img/bike-1778118_1920 (1).png") no-repeat;
+    height: 1080px;
+  }
+  .header_logo {
+    background: url("../img/VeloRent2.png") no-repeat;
+    width: 222px;
+    height: 57px;
+    padding-right: 115px;
+  }
+  .header .button {
+    width: 500px;
+    height: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
