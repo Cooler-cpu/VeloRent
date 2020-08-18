@@ -275,7 +275,7 @@ a:hover {
   font-size: 24px;
   line-height: 28px;
   color: #00CD4A;
-  width: 100%;
+  width: 94%;
   margin-top: 20px;
   padding-bottom: 20px;
 }
@@ -719,38 +719,6 @@ a:hover {
   width: 100%;
 }
 
-@media (max-width: 987px) {
-  .price .price_text_time {
-    width: 99.1%;
-  }
-  .main_content {
-    width: 100%;
-  }
-  .main_content .main_content_cards {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .main_content .main_content_card {
-    margin-left: -25px;
-    margin-bottom: 20px;
-  }
-  .price .price_text_time p {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 910px) {
-  .header_wrapper_content p {
-    font-size: 60px !important;
-  }
-  .main_content_cards {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 @media (max-width: 1000px) {
   .item_helmet {
     margin-left: 240px;
@@ -772,9 +740,47 @@ a:hover {
   }
 }
 
+@media (max-width: 987px) {
+  .price .price_text_time {
+    width: 99.1%;
+  }
+  .main_content {
+    width: 100%;
+  }
+  .main_content .main_content_cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main_content .main_content_card {
+    margin-left: -25px;
+    margin-bottom: 20px;
+  }
+  .main_content .main_content_card .main_content_card_text2 {
+    font-size: 15px;
+  }
+  .price .price_text_time p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 910px) {
+  .header_wrapper_content p {
+    font-size: 60px !important;
+  }
+  .main_content_cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 741px) {
   .main_content_subtitle p {
     font-size: 25px;
+  }
+  .cards .cards_title {
+    padding: 60px 0px 0px 0px;
   }
   .equipment_wraper {
     -webkit-box-orient: vertical;
