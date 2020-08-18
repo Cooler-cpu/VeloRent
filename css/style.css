@@ -721,7 +721,7 @@ a:hover {
 
 @media (max-width: 987px) {
   .price .price_text_time {
-    width: 100%;
+    width: 99.1%;
   }
   .main_content {
     width: 100%;
@@ -733,6 +733,10 @@ a:hover {
   }
   .main_content .main_content_card {
     margin-left: -25px;
+    margin-bottom: 20px;
+  }
+  .price .price_text_time p {
+    font-size: 22px;
   }
 }
 
