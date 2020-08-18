@@ -30,7 +30,7 @@ a
     &:hover
         text-decoration: none
 
-//контейнер    
+контейнер    
 .container
     max-width: 1170px
     margin: 0 auto
@@ -68,11 +68,12 @@ a
         align-items: center
     &_logo
         background: url
-        margin-right: 115px
+        //margin-right: 115px
         background: url('../img/VeloRent.png') no-repeat 
         width: 134px
         height: 34px
         padding-right: 115px
+
     &_navigation
         display: flex
         list-style: none
@@ -87,15 +88,18 @@ a
     &_wrapper
         display: flex
         flex-direction: column
-        width: 540px
+        //width: 540px
         //Сверху справа снизу слева
         padding: 68px 100px 0px 310px 
-        height: 500px
+        
         &_content
+            //text-align: center
             p
+                
                 font-weight: 500
                 font-size: 50px
                 line-height: 57px
+                
                 
         .button
             width: 380px
@@ -110,16 +114,21 @@ a
                 font-size: 30px
                 line-height: 34px
                 color: #ffffff
+
+.text_fix
+    margin-top: 20px
+
 .main
 
     &_content
         margin: 0 auto
-        padding: 40px 38px 0px 0px
+        padding: 40px 0px 0px 0px
         //Сверху справа снизу слева
         display: flex
         align-items: center
         flex-direction: column
-        width: 1535px
+        width: 1235px
+
         &_subtitle
             p
                 font-weight: 500
@@ -146,7 +155,7 @@ a
                  
                 
             &_text
-                margin-top: 12px
+                //margin-top: 12px
                 font-size: 20px
                 line-height: 23px
             &_text2
@@ -204,7 +213,7 @@ a
         font-size: 24px
         line-height: 28px
         color: #00CD4A
-        margin-left: 42px
+        //margin-left: 42px ломает страницу
         width: 100%
         margin-top: 20px
         padding-bottom: 20px
@@ -270,7 +279,7 @@ a
     margin-bottom: 5px //Костыль
 
 .rent
-    display: flex
+    display: none // display: flex
     align-items: center
     flex-direction: column
     //align-content: space-between
@@ -333,6 +342,7 @@ a
         display: flex
         flex-wrap: wrap
         margin-left: 0px
+        
         
         .item
             display: flex

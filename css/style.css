@@ -68,7 +68,6 @@ a:hover {
 
 .header_logo {
   background: url;
-  margin-right: 115px;
   background: url("../img/VeloRent.png") no-repeat;
   width: 134px;
   height: 34px;
@@ -102,9 +101,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 540px;
   padding: 68px 100px 0px 310px;
-  height: 500px;
 }
 
 .header_wrapper_content p {
@@ -130,9 +127,13 @@ a:hover {
   color: #ffffff;
 }
 
+.text_fix {
+  margin-top: 20px;
+}
+
 .main_content {
   margin: 0 auto;
-  padding: 40px 38px 0px 0px;
+  padding: 40px 0px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +144,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 1535px;
+  width: 1235px;
 }
 
 .main_content_subtitle p {
@@ -188,7 +189,6 @@ a:hover {
 }
 
 .main_content_card_text {
-  margin-top: 12px;
   font-size: 20px;
   line-height: 23px;
 }
@@ -275,7 +275,6 @@ a:hover {
   font-size: 24px;
   line-height: 28px;
   color: #00CD4A;
-  margin-left: 42px;
   width: 100%;
   margin-top: 20px;
   padding-bottom: 20px;
@@ -392,9 +391,7 @@ a:hover {
 }
 
 .rent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -628,10 +625,43 @@ a:hover {
   max-width: 1140px;
 }
 
+@media (max-width: 1176px) {
+  .header_tel {
+    margin-left: 98px;
+    font-size: 20px;
+  }
+  .header_logo {
+    padding-right: 70px;
+  }
+}
+
+@media (max-width: 1165px) {
+  .main_content {
+    width: 100%;
+  }
+  .main_content .main_content_card {
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .cards_wraper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .equipment_wraper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 1080px) {
   .header {
-    background: url("../img/bike-1778118_1920 (1).png") no-repeat;
+    background: url("../img/bike-1778118_1920 (1).png") center center/cover no-repeat;
     height: 1080px;
+    max-width: 100%;
   }
   .header_logo {
     background: url("../img/VeloRent2.png") no-repeat;
@@ -639,9 +669,78 @@ a:hover {
     height: 57px;
     padding-right: 115px;
   }
+  .header nav {
+    display: none;
+  }
+  .header .header_tel {
+    display: none;
+  }
+  .header .header_wrapper {
+    padding: 0px 0px 0px 0px;
+    margin: 0px auto;
+    margin-right: 350px;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .header_wrapper_content {
+    margin-left: 60px;
+    text-align: left;
+  }
+  .header .header_wrapper_content p {
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 92px;
+    width: 853px;
+  }
   .header .button {
+    margin-top: 527px;
+    left: 50%;
+    right: 50%;
     width: 500px;
     height: 100px;
+  }
+}
+
+.main_content .main_content_cards {
+  margin-left: 10px;
+}
+
+.price_text_line {
+  margin: 0 auto;
+}
+
+.price_text_line img {
+  width: 100%;
+}
+
+.footer iframe {
+  width: 100%;
+}
+
+@media (max-width: 987px) {
+  .price .price_text_time {
+    width: 100%;
+  }
+  .main_content {
+    width: 100%;
+  }
+  .main_content .main_content_cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main_content .main_content_card {
+    margin-left: -25px;
+  }
+}
+
+@media (max-width: 910px) {
+  .main_content_cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
