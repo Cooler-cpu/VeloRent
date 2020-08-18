@@ -659,7 +659,7 @@ a:hover {
 
 @media (max-width: 1080px) {
   .header {
-    background: url("../img/bike-1778118_1920 (1).png") center center/cover no-repeat;
+    background: url("../img/bg_adapt.png") center center/cover no-repeat;
     height: 1080px;
     max-width: 100%;
   }
@@ -765,6 +765,36 @@ a:hover {
   }
   .item_gloves {
     margin-left: 180px;
+  }
+}
+
+@media (max-width: 741px) {
+  .main_content_subtitle p {
+    font-size: 25px;
+  }
+  .equipment_wraper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .item_helmet {
+    margin-left: 0px;
+  }
+  .item_lock {
+    margin-left: 0px;
+  }
+  .item_armchair {
+    margin-left: 0px;
+  }
+  .item_trailer {
+    margin-left: 0px;
+  }
+  .item_lamp {
+    margin-left: 0px;
+  }
+  .item_gloves {
+    margin-left: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
