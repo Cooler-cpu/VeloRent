@@ -1,0 +1,6 @@
+https://webdraftt.com/tutorial/nodejs/email // for email newsletter
+
+https://webdraftt.com/tutorial/nodejs/sql   // for sql database
+
+https://w1c.ru/js-16.html for slow scroll animation
+

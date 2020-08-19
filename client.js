@@ -58,3 +58,14 @@ open_modal_window = () => {
 close_modal_window = () => {
 
 }
+
+// jquery slow scroll to id
+
+jQuery(document).ready(function($){
+    //Код
+
+    $('.js-scroll-trigger').click(function() {
+        console.log("Тригер сработал");
+    });
+
+});
