@@ -62,13 +62,13 @@
         .header_wrapper
             padding: 0px 0px 0px 0px
             margin: 0px auto
-            margin-right: 350px
-            width: 100%
+            margin-right: 0px
+            
             align-items: center
 
         .header_wrapper_content
-            margin-left: 60px
-            text-align: left
+            margin-left: 0px
+            text-align: center
 
             
             p
@@ -82,6 +82,7 @@
 
         .button
             margin-top: 527px
+            margin-left: 0px
             left: 50%
             right: 50%
             width: 500px
@@ -161,16 +162,24 @@
         
 
 
+@media (max-width: 930px)
+    .header
+        .header_wrapper
+
+            .header_wrapper_content
+                p
+                    font-size: 60px !important
+
+
+
+
     
 
     
 
 @media (max-width: 910px)
-    .header_wrapper_content
-        p
-            font-size: 60px !important
-         
-        
+    .header
+        // background: url('../img/header_mobile.png') center center/cover no-repeat
 
     .main_content_cards
         justify-content: center

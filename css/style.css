@@ -709,15 +709,14 @@ a:hover {
   .header .header_wrapper {
     padding: 0px 0px 0px 0px;
     margin: 0px auto;
-    margin-right: 350px;
-    width: 100%;
+    margin-right: 0px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .header .header_wrapper_content {
-    margin-left: 60px;
-    text-align: left;
+    margin-left: 0px;
+    text-align: center;
   }
   .header .header_wrapper_content p {
     font-weight: 500;
@@ -727,6 +726,7 @@ a:hover {
   }
   .header .button {
     margin-top: 527px;
+    margin-left: 0px;
     left: 50%;
     right: 50%;
     width: 500px;
@@ -795,10 +795,13 @@ a:hover {
   }
 }
 
-@media (max-width: 910px) {
-  .header_wrapper_content p {
+@media (max-width: 930px) {
+  .header .header_wrapper .header_wrapper_content p {
     font-size: 60px !important;
   }
+}
+
+@media (max-width: 910px) {
   .main_content_cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
