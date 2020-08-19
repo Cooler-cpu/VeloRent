@@ -12,8 +12,6 @@ setInterval(function(){
         header.style.backgroundRepeat = 'no-repeat';
         header.style.backgroundSize = 'cover';
     }
-
-
 },2000);
 
 setInterval(function(){
@@ -46,13 +44,14 @@ setInterval(function(){
 
 
 
-//Получаем id modal
+//get id modal
 
-let modal = document.getElementById("modal_content");
+
+let modal = document.getElementById("modal_window");
 
 
 open_modal_window = () => {
-    modal.style.display = "block"
+    modal.style.display = 'block';
     console.log("1");
 }
 
