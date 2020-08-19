@@ -125,9 +125,7 @@ a:hover {
 }
 
 .header_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -673,9 +671,6 @@ a:hover {
   .main_content .main_content_card {
     margin-left: -10px;
   }
-  .rent_instruct {
-    margin-left: 20px;
-  }
 }
 
 @media (max-width: 1110px) {
@@ -860,6 +855,21 @@ a:hover {
   .cards .cards_title {
     padding: 60px 0px 0px 0px;
   }
+  .card_2 {
+    display: none;
+  }
+  .card_3 {
+    display: none;
+  }
+  .card_4 {
+    display: none;
+  }
+  .card_5 {
+    display: none;
+  }
+  .card_6 {
+    display: none;
+  }
   .equipment_wraper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -871,18 +881,23 @@ a:hover {
   }
   .item_lock {
     margin-left: 0px;
+    display: none !important;
   }
   .item_armchair {
     margin-left: 0px;
+    display: none !important;
   }
   .item_trailer {
     margin-left: 0px;
+    display: none !important;
   }
   .item_lamp {
     margin-left: 0px;
+    display: none !important;
   }
   .item_gloves {
     margin-left: 0px;
+    display: none !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -74,7 +74,7 @@ jQuery(document).ready(function($){
 
 
         if(scrollTop < 1100){
-            time_complexity = 500 // for the first two section
+            time_complexity = 700 // for the first two section
         }
         else{
             time_complexity = 4000 // for the last two section
