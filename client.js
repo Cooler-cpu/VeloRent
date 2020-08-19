@@ -80,7 +80,6 @@ jQuery(document).ready(function($){
             time_complexity = 4000 // for the last two section
         }
 
-        console.log("length ", scrollTop);
 
         $('html, body').animate({
             scrollTop: scrollTop  // add animation

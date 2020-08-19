@@ -447,8 +447,6 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  margin-left: 100px;
 }
 
 .rent_instruct_item {
@@ -675,6 +673,9 @@ a:hover {
   .main_content .main_content_card {
     margin-left: -10px;
   }
+  .rent_instruct {
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 1110px) {
@@ -807,6 +808,17 @@ a:hover {
   .header .header_wrapper .header_wrapper_content p {
     font-size: 60px !important;
   }
+  .rent_instruct_row_left {
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+  .rent_instruct_row_center {
+    margin-left: 25px;
+    margin-right: 45px;
+  }
+  .rent_instuce_row_right {
+    margin-left: 40px;
+  }
 }
 
 @media (max-width: 910px) {
@@ -817,7 +829,31 @@ a:hover {
   }
 }
 
-@media (max-width: 741px) {
+@media (max-width: 805px) {
+  .rent_instruct {
+    margin-left: 0px;
+  }
+  .rent_instruct_item {
+    width: 100%;
+  }
+  .rent_instruct_item_description {
+    font-size: 17px;
+  }
+  .rent_instruct_row_left {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .rent_instruct_row_center {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .rent_instruct_row_right {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 740px) {
   .main_content_subtitle p {
     font-size: 25px;
   }
