@@ -1,7 +1,9 @@
 let header=document.getElementsByClassName("header")[0],
-
+time_complexity = 0;
 tmp = ['b3.png', 'b2.png', 'b1.png'],
 i=0;
+
+
 
 console.log("ширина экрана:", window.innerWidth);
 
@@ -65,7 +67,26 @@ jQuery(document).ready(function($){
     //Код
 
     $('.js-scroll-trigger').click(function() {
-        console.log("Тригер сработал");
+        var scrollName = $(this).attr('data-scroll')
+        scrollElem = $(scrollName); // find this id in the dom tree
+
+        scrollTop = scrollElem.offset().top; // value to id distance
+
+
+        if(scrollTop < 1100){
+            time_complexity = 500 // for the first two section
+        }
+        else{
+            time_complexity = 4000 // for the last two section
+        }
+
+        console.log("length ", scrollTop);
+
+        $('html, body').animate({
+            scrollTop: scrollTop  // add animation
+          }, time_complexity);
+
+
     });
 
 });
