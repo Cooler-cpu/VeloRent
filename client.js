@@ -61,6 +61,20 @@ close_modal_window = () => {
 
 }
 
+
+//slider for mobile
+
+slide_left =() => {
+    console.log("left");
+}
+
+slide_right = () => {
+    console.log("right");
+}
+
+
+
+
 // jquery slow scroll to id
 
 jQuery(document).ready(function($){

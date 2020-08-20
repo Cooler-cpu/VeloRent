@@ -277,6 +277,18 @@ a:hover {
   border-bottom: 1px dashed #C4C4C7;
 }
 
+.arrows_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 330px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 120px;
+}
+
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -898,6 +910,12 @@ a:hover {
   .item_gloves {
     margin-left: 0px;
     display: none !important;
+  }
+}
+
+@media (max-width: 583px) {
+  .main_content_subtitle p {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
