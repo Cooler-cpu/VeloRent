@@ -51,17 +51,13 @@ a
 .modal_window
     width: 100%
     height: 100%
-    display: none
+    display: block
     position: fixed
     background-color: rgba(47, 79, 79, 0.4)
     top: 0px
     right: 0px
 
     //need to add animation
-    
-    
-    
-    
 
     .modal_content_wrapper
         transform: translate(-50%,-50%)
@@ -69,8 +65,6 @@ a
         left: 50%
         position: absolute
   
-        
-     
 
         .modal_content
             background-color: #FFFFFF
@@ -78,7 +72,40 @@ a
             flex-direction: column
             width: 558px
             height: 378px
+            align-items: center
+            text-align: center
+            &_close_img
+                position: absolute
+                width: 30px
+                height: 30px
+                right: 10px
+                top: 10px
+            
+            &_title
+                
+                margin-top: 43px
+                font-size: 30px
+                line-height: 34px
+            
+            input
+                outline-color: #00CD4A
+                border-color: #00CD4A
+                border-radius: 4px
+                font-size: 24px
 
+            .input_name
+                margin-top: 25px
+                width: 380px
+                height: 60px
+
+            .input_phone
+                margin-top: 20px
+                width: 380px
+                height: 60px
+
+            .button
+                margin-top: 20px
+                height: 60px
 
 
 .header
@@ -222,7 +249,7 @@ a
     
 // arrows style for slider ///////!!!!///////
 .arrows_img
-    display: flex
+    display: none
     position: absolute
     width: 330px
     justify-content: space-between

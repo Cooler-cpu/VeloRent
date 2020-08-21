@@ -55,8 +55,27 @@
 
         <div class="modal_window" id="modal_window">
             <div id="modal_content_wrapper" class="modal_content_wrapper">
-                <div class="modal_content">
+                <div class="modal_content fonts_main">
+                    <div class="modal_content_close_img">
+                        <img src="img/close-button.png" onclick="close_modal_window()">
+                    </div>
+                    <div class="modal_content_title">
+                        <p>
+                            Оставьте Ваше имя и телефон <br>
+                            для бронирования велосипеда
+                        </p>
+                    </div>
+
                     
+                        <input class="input_name" type="text" placeholder="Имя">
+                        <input class="input_phone" type="text" placeholder="Телефон">
+                    
+                        <button class="button fonts_main" onclick="close_modal_window()">
+                            <span class="button_text">
+                                Отправить
+                            </span>
+                        </button>
+
                 </div>
             </div>
         </div>

@@ -9,11 +9,35 @@ console.log("ширина экрана:", window.innerWidth);
 
 
 setInterval(function(){
+
+
+        //header.style.background = 'url("img/'+"header_mobile.png"+'")';
+
     if(window.innerWidth <= 1080){
-        header.style.background = 'url("img/'+"bg_adapt.png"+'")';
-        header.style.backgroundRepeat = 'no-repeat';
-        header.style.backgroundSize = 'cover';
+
+        if(window.innerWidth <= 515){
+            header.style.background = 'url("img/'+"header_mobile.png"+'")';
+            header.style.backgroundRepeat = 'no-repeat';
+            header.style.backgroundPosition = 'center';
+            
+
+            
+            
+
+        }
+        else{
+
+            header.style.background = 'url("img/'+"bg_adapt.png"+'")';
+            header.style.backgroundRepeat = 'no-repeat';
+            header.style.backgroundSize = 'cover';
+            console.log("2");
+
+        }
+
+       
+
     }
+
 },2000);
 
 setInterval(function(){
@@ -58,7 +82,7 @@ open_modal_window = () => {
 }
 
 close_modal_window = () => {
-
+    modal.style.display = 'none';
 }
 
 
