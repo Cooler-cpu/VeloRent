@@ -4,3 +4,11 @@ https://webdraftt.com/tutorial/nodejs/sql   // for sql database
 
 https://w1c.ru/js-16.html for slow scroll animation
 
+
+https://nodemailer.com/about/
+
+https://nodemailer.com/message/
+
+https://metanit.com/web/nodejs/4.5.php
+
+http://htmlbook.ru/html/form/action

@@ -13,26 +13,20 @@ setInterval(function(){
 
         //header.style.background = 'url("img/'+"header_mobile.png"+'")';
 
-    if(window.innerWidth <= 1080){
+    if(window.innerWidth <= 1080 && window.innerWidth >= 520 ){
 
-        if(window.innerWidth <= 515){
-            header.style.background = 'url("img/'+"header_mobile.png"+'")';
-            header.style.backgroundRepeat = 'no-repeat';
-            header.style.backgroundPosition = 'center';
+        // if(window.innerWidth <= 515){
+        //     header.style.background = 'url("img/'+"header_mobile.png"+'")';
+        //     header.style.backgroundRepeat = 'no-repeat';
+        //     header.style.backgroundPosition = 'center';
             
-
-            
-            
-
-        }
-        else{
+        // }
+        // else{
 
             header.style.background = 'url("img/'+"bg_adapt.png"+'")';
             header.style.backgroundRepeat = 'no-repeat';
             header.style.backgroundSize = 'cover';
             console.log("2");
-
-        }
 
        
 

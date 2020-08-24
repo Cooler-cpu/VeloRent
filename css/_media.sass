@@ -150,11 +150,16 @@
         .main_content_cards
             justify-content: center
         .main_content_card
-            margin-left: -25px
+            margin-left: 0px
             margin-bottom: 20px
 
             .main_content_card_text2
                 font-size: 15px
+        
+
+        
+
+            
 
         
         
@@ -198,14 +203,21 @@
         justify-content: center
 
 
+@media ( max-width: 825px)
+
+    .rent_instruct
+        justify-content: center
+
+
 @media ( max-width: 805px)
     //rent adaptive
     
     .rent_instruct
-        margin-left: 0px
+        //margin-left: 0px
 
         &_item
-            width: 100%
+            img
+                width: 100%
             &_description
                 font-size: 17px
 
@@ -213,10 +225,10 @@
         margin-left: 0px
         margin-right: 0px
     .rent_instruct_row_center
-        margin-left: 0px
+        margin-left: 10px
         margin-right: 0px
     .rent_instruct_row_right
-        margin-left: 0px
+        margin-left: 30px
         margin-right: 0px
 
     
@@ -225,12 +237,16 @@
 @media (max-width: 740px)
 
 
+
     .main_content_subtitle
         p
             font-size: 25px
     
     .arrows_img
         display: flex
+    
+    .rent_instruct_box 
+        margin-left: 20px
 
     .cards
 
@@ -260,6 +276,9 @@
 
 
     // start of slider development /////////////!!!!!!!!//////////
+
+
+
 
     .card_1
         
@@ -307,19 +326,209 @@
         display: none !important
         
 
+
     
 //mobile
     
-@media (max-width: 583px)
+@media (max-width: 585px)
     .main_content
 
         &_subtitle
             p
                 font-size: 20px
 
+    .rent_instruct
+        flex-wrap: wrap
+
+        img
+            display: none
+
+    .rent_instruct_box
+        margin-left: 0px
+    
+    
+
+
+    .rent_instruct_row_center
+        display: none
+    
+    .rent_instruct_row_right
+        display: none
+
+    .img_mobile_1
+        background:  url(../img/home_mobile.png) center/cover no-repeat 
+        width: 50px
+        height: 45px
+
+    .img_mobile_2
+        background: url(../img/id_img_mobile.png) center/cover no-repeat 
+        width: 50px
+        height: 50px
+
+    .img_mobile_3
+        background: url(../img/high-five-mobile.png) center/cover no-repeat
+        width: 50px
+        height: 50px
+
+    .img_mobile_4
+        background: url(../img/velo_img_mobile.png) center/cover no-repeat
+        width: 50px
+        height: 36px
+
+    .item_3
+        
+
+    
+
 @media (max-width: 515px)
     .header
-        background: url(../img/header_mobile.png) center center/cover no-repeat
+        background: url(../img/header_mobile.png) center/cover no-repeat
         height: 444px
+
+        &_logo
+            background: url(../img/logo_mobile.png) no-repeat
+            width: 100px
+            height: 27px
+            padding-left: 15px
+
+
+
+
+    .main_content
+
+        &_subtitle
+            p
+                font-size: 17px
+        
+        &_cards
+            margin-left: 0px !important
+
+        &_card
+            width: 135px
+            img
+                display: 
+
+            &_text
+                font-size: 18px
+
+        br
+            display: block
+            
+    .price
+
+        &_text
+
+            padding-right: 0px
+
+            p
+                font-size: 24px
+
+
+        &_text_time
+            width: 280px !important
+            p
+                font-size: 18px !important 
+
+        &_text_line
+            
+            background: url(../img/line_mobile.png) center no-repeat
+            width: 100%
+            height: 16px
+            .line_img
+                display: none
+
+        &_text_prices
+
+        
+    .cards
+        &_title
+            p
+                font-size: 25px 
+        
+        &_velo_title
+            font-size: 21px
+        
+        &_wraper
+
+            &_content
+                border: none
+
+        
+    .rent
+
+        &_title
+            font-size: 25px
+
+        &_instruct
+            flex-wrap: wrap
+            justify-content: center
+
+    .equipment
+
+        &_title
+            font-size: 25px
+
+    
+    .addresses
+
+        &_title
+            font-size: 25px
+
+        &_wrapper
+
+            .content
+
+                &_img
+
+                    
+                .place_1
+                    background: url(../img/mobile_place_1.png) center no-repeat
+                    width: 40px
+                    height: 40px
+
+                .place_2
+                    background: url(../img/mobile_place_2.png) center no-repeat
+                    width: 40px
+                    height: 40px
+
+                .place_3
+                    background: url(../img/mobile_place_3.png) center no-repeat
+                    width: 40px
+                    height: 40px
+
+                .img_place_1
+                    display: none
+
+                .img_place_2
+                    display: none
+
+                .img_place_3
+                    display: none    
+            
+                &_description
+                    p
+                        font-size: 18px
+                        line-height: 21px
+
+
+    
+    
+@media (max-width: 425px)
+    
+    .main_content
+
+        &_subtitle
+            display: none
+
+
+
+
+
+
+        
+
+
+        
+
 
     

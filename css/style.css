@@ -54,7 +54,7 @@ a:hover {
 .modal_window {
   width: 100%;
   height: 100%;
-  display: block;
+  display: none;
   position: fixed;
   background-color: rgba(47, 79, 79, 0.4);
   top: 0px;
@@ -268,6 +268,20 @@ a:hover {
   margin-top: 10px;
   font-size: 16px;
   line-height: 18px;
+}
+
+.main_content br {
+  display: none;
+}
+
+.main_content .main_content_card_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .price {
@@ -539,6 +553,32 @@ a:hover {
   margin-left: 70px;
 }
 
+.rent .rent_instruct_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rent .rent_instruct_row_left {
+  background: url("../img/arrow_mobile.png") no-repeat;
+  width: 40px;
+}
+
+.rent .rent_instruct_row_left .item_3 {
+  margin-right: 40px !important;
+}
+
+.rent .rent_instruct_row_left .item_2::after {
+  background: url("../img/arrow_mobile_right.png") no-repeat;
+  width: 40px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.rent .rent_instruct_row_left .img_mobile_2 {
+  margin-bottom: 21px;
+}
+
 .equipment {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -704,6 +744,7 @@ a:hover {
 
 .footer {
   max-width: 1140px;
+  display: none;
 }
 
 @media (max-width: 1176px) {
@@ -840,7 +881,7 @@ a:hover {
             justify-content: center;
   }
   .main_content .main_content_card {
-    margin-left: -25px;
+    margin-left: 0px;
     margin-bottom: 20px;
   }
   .main_content .main_content_card .main_content_card_text2 {
@@ -876,11 +917,16 @@ a:hover {
   }
 }
 
-@media (max-width: 805px) {
+@media (max-width: 825px) {
   .rent_instruct {
-    margin-left: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .rent_instruct_item {
+}
+
+@media (max-width: 805px) {
+  .rent_instruct_item img {
     width: 100%;
   }
   .rent_instruct_item_description {
@@ -891,11 +937,11 @@ a:hover {
     margin-right: 0px;
   }
   .rent_instruct_row_center {
-    margin-left: 0px;
+    margin-left: 10px;
     margin-right: 0px;
   }
   .rent_instruct_row_right {
-    margin-left: 0px;
+    margin-left: 30px;
     margin-right: 0px;
   }
 }
@@ -908,6 +954,9 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .rent_instruct_box {
+    margin-left: 20px;
   }
   .cards .cards_title {
     padding: 60px 0px 0px 0px;
@@ -958,16 +1007,152 @@ a:hover {
   }
 }
 
-@media (max-width: 583px) {
+@media (max-width: 585px) {
   .main_content_subtitle p {
     font-size: 20px;
+  }
+  .rent_instruct {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .rent_instruct img {
+    display: none;
+  }
+  .rent_instruct_box {
+    margin-left: 0px;
+  }
+  .rent_instruct_row_center {
+    display: none;
+  }
+  .rent_instruct_row_right {
+    display: none;
+  }
+  .img_mobile_1 {
+    background: url(../img/home_mobile.png) center/cover no-repeat;
+    width: 50px;
+    height: 45px;
+  }
+  .img_mobile_2 {
+    background: url(../img/id_img_mobile.png) center/cover no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+  .img_mobile_3 {
+    background: url(../img/high-five-mobile.png) center/cover no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+  .img_mobile_4 {
+    background: url(../img/velo_img_mobile.png) center/cover no-repeat;
+    width: 50px;
+    height: 36px;
   }
 }
 
 @media (max-width: 515px) {
   .header {
-    background: url(../img/header_mobile.png) center center/cover no-repeat;
+    background: url(../img/header_mobile.png) center/cover no-repeat;
     height: 444px;
+  }
+  .header_logo {
+    background: url(../img/logo_mobile.png) no-repeat;
+    width: 100px;
+    height: 27px;
+    padding-left: 15px;
+  }
+  .main_content_subtitle p {
+    font-size: 17px;
+  }
+  .main_content_cards {
+    margin-left: 0px !important;
+  }
+  .main_content_card {
+    width: 135px;
+  }
+  .main_content_card_text {
+    font-size: 18px;
+  }
+  .main_content br {
+    display: block;
+  }
+  .price_text {
+    padding-right: 0px;
+  }
+  .price_text p {
+    font-size: 24px;
+  }
+  .price_text_time {
+    width: 280px !important;
+  }
+  .price_text_time p {
+    font-size: 18px !important;
+  }
+  .price_text_line {
+    background: url(../img/line_mobile.png) center no-repeat;
+    width: 100%;
+    height: 16px;
+  }
+  .price_text_line .line_img {
+    display: none;
+  }
+  .cards_title p {
+    font-size: 25px;
+  }
+  .cards_velo_title {
+    font-size: 21px;
+  }
+  .cards_wraper_content {
+    border: none;
+  }
+  .rent_title {
+    font-size: 25px;
+  }
+  .rent_instruct {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .equipment_title {
+    font-size: 25px;
+  }
+  .addresses_title {
+    font-size: 25px;
+  }
+  .addresses_wrapper .content .place_1 {
+    background: url(../img/mobile_place_1.png) center no-repeat;
+    width: 40px;
+    height: 40px;
+  }
+  .addresses_wrapper .content .place_2 {
+    background: url(../img/mobile_place_2.png) center no-repeat;
+    width: 40px;
+    height: 40px;
+  }
+  .addresses_wrapper .content .place_3 {
+    background: url(../img/mobile_place_3.png) center no-repeat;
+    width: 40px;
+    height: 40px;
+  }
+  .addresses_wrapper .content .img_place_1 {
+    display: none;
+  }
+  .addresses_wrapper .content .img_place_2 {
+    display: none;
+  }
+  .addresses_wrapper .content .img_place_3 {
+    display: none;
+  }
+  .addresses_wrapper .content_description p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 425px) {
+  .main_content_subtitle {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
