@@ -241,6 +241,32 @@
     .main_content_subtitle
         p
             font-size: 25px
+
+    //adaptive for modal_window
+
+    .modal_content
+        width: 320px !important
+        height: 395px !important
+
+        .modal_content_title
+            margin-top: 63px !important
+            p
+                font-size: 20px
+                line-height: 23px
+
+        .input_name
+            width: 276px !important
+            height: 60px !important
+
+        .input_phone
+            width: 276px !important
+            height: 60px !important
+
+        .button
+            width: 276px
+
+
+
     
     .arrows_img
         display: flex
@@ -263,13 +289,7 @@
                         
 
                    
-                // .cards_wraper_content_display_title::before
-                //     display: block
-                //     content: url('../img/vector_left.png')
-                //     width: 8px
-                //     //position: absolute
-                //     height: 14px
-                //     margin-left: 50px
+            
                 
     
                     
@@ -283,15 +303,15 @@
     .card_1
         
     .card_2
-        display: none
+        display: none //none
     .card_3
-        display: none
+        display: none //none
     .card_4
-        display: none
+        display: none //none
     .card_5
-        display: none
+        display: none //none
     .card_6
-        display: none
+        display: none //none
 
 
     
@@ -327,6 +347,7 @@
         
 
 
+
     
 //mobile
     
@@ -346,6 +367,8 @@
     .rent_instruct_box
         margin-left: 0px
     
+    .rent_instruct_item
+        margin-left: 20px
     
 
 
@@ -512,7 +535,47 @@
 
 
     
+@media( max-width: 483px)   
+
+    .rent_instruct_item
+        margin-left: 0px !important
+
+    .rent_instruct_row_left
+
+        background: url('../img/arrow_mobile.png') no-repeat 
+        width: 40px
+
+    .item_2::after
+        content: ""
+        background: url('../img/arrow_right_mobile.png') no-repeat
+        width: 40px
+        height: 50px
+        margin-left: 25px
+        margin-top: 25px
+        margin-bottom: 25px
+
+    .item_1::after 
+        content: ""
+        background: url(../img/arrow_left_img.png) no-repeat
+        width: 40px
+        height: 50px
+        margin-left: 25px
+        margin-top: 25px
+        margin-bottom: 25px
+        
+    .rent_instruct_row_right
+        background: url('../img/arrow_bottom_mobile.png') center no-repeat
+        width: 40px
+        display: block
+        margin-right: 15px
+        margin-left: 20px
+
     
+        
+        
+        
+       
+
 @media (max-width: 425px)
     
     .main_content
@@ -520,8 +583,190 @@
         &_subtitle
             display: none
 
+    .cards_wraper_content
+        width: 270px !important
+        min-height: 352px !important
+        margin-left: 0px
+        
+            // img
+            //     display: none
+        .cards_wraper_content_display
+
+    .cards_wraper_content_display_title
+        font-size: 20px
+        line-height: 23px
+        margin-left: 10px
+        margin-top: 15px
+
+    .cards_wraper_content_display_description
+        font-weight: 300
+        font-size: 14px
+        line-height: 16px
+        margin-left: 10px
+        margin-top: 15px
+            
+
+    .cards_wraper_content_display_description_button
+        margin-left: 45px
 
 
+    .button
+        width: 175px !important
+        height: 44px !important
+
+        
+    
+
+    .velo_img_1
+        background: url('../img/velo_img_mobile_1.png') no-repeat
+        width: 270px
+        height: 180px
+        
+        img
+            display: none
+
+    .velo_img_2
+        background: url('../img/velo_img_mobile_2.png') no-repeat
+        width: 310px
+        height: 180px
+
+        img
+            display: none
+
+    .velo_img_3
+        background: url('../img/velo_img_mobile_3.png') no-repeat
+        width: 310px
+        height: 180px
+
+        img
+            display: none
+
+
+    .velo_img_4
+        background: url('../img/velo_img_mobile_4.png') no-repeat
+        width: 290px
+        height: 184px
+
+        img
+            display: none
+
+        
+
+
+    .velo_img_5
+        background: url('../img/velo_img_mobile_5.png') no-repeat
+        width: 288px
+        height: 180px
+
+        img
+            display: none
+    
+    .velo_img_6
+        background: url('../img/velo_img_mobile_6.png') no-repeat
+        width: 288px
+        height: 180px
+
+        img
+            display: none
+
+    
+    .velo_img_7
+        background: url('../img/velo_img_mobile_7.png') no-repeat
+        width: 280px
+        height: 180px
+        img
+            display: none
+
+    .velo_img_8
+        background: url('../img/velo_img_mobile_8.png') no-repeat
+        width: 290px
+        height: 183px
+
+        img
+            display: none
+
+
+    .velo_img_9
+        background: url('../img/velo_img_mobile_9.png') no-repeat
+        width: 302px
+        height: 180px
+        img
+            display: none
+
+    .velo_img_10
+        background: url('../img/velo_img_mobile_10.png') no-repeat
+        width: 290px
+        height: 180px
+        img
+            display: none
+    
+    .velo_img_11
+        background: url('../img/velo_img_mobile_11.png') no-repeat
+        width: 290px
+        height: 185px
+        img
+            display: none
+        
+    .velo_img_12
+        background: url('../img/velo_img_mobile_12.png') no-repeat
+        width: 305px
+        height: 180px
+        img
+            display: none
+    
+            
+    .arrows_img
+        width: 305px !important
+
+    .arrows_img_2
+        display: flex
+
+    .rent_title
+        display: none
+
+    .rent_title_mobile
+        display: block
+    
+    
+    .price_text 
+        
+        p
+            font-weight: 500
+            font-size: 22px
+            line-height: 25px
+
+    .cards_title 
+        p 
+            font-weight: 500
+            font-size: 22px
+            line-height: 25px
+
+    .rent_title_mobile 
+        p
+            font-weight: 500
+            font-size: 22px
+            line-height: 25px
+
+    .equipment_title 
+        p
+            font-weight: 500
+            font-size: 22px
+            line-height: 25px
+
+    .item
+        .arrows_img
+            width: 270px !important
+
+
+    
+
+
+
+            
+   
+
+        
+    
 
 
 

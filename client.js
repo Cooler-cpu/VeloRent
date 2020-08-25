@@ -67,16 +67,23 @@ setInterval(function(){
 //get id modal
 
 
-let modal = document.getElementById("modal_window");
+let modal = document.getElementById("modal_window"),
+
+
 
 
 open_modal_window = () => {
     modal.style.display = 'block';
-    console.log("1");
+    
+    fix_arrows_open();
+    
 }
 
 close_modal_window = () => {
     modal.style.display = 'none';
+
+    fix_arrows_back()
+
 }
 
 
@@ -119,5 +126,42 @@ jQuery(document).ready(function($){
 
 
     });
+
+});
+
+
+$(fix_arrows = () =>{
+    
+    window.fix_arrows_open = () => {
+
+        
+        $('.arrows_img').each(function(index){
+            
+        
+            $(this).css("display", "none" );
+        });
+
+        $('arrows_img_2').each(function(index){
+
+            $(this).css("display", "none" );
+
+        });
+    }
+
+    window.fix_arrows_back = () => {
+        
+        $('.arrows_img').each(function(index){
+            
+        
+            $(this).css("display", "flex" );
+        });
+
+        $('arrows_img_2').each(function(index){
+
+            $(this).css("display", "flex" );
+
+        });
+
+    }
 
 });
