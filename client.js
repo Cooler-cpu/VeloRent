@@ -165,3 +165,10 @@ $(fix_arrows = () =>{
     }
 
 });
+
+setInterval(function(){
+    if(window.innerWidth < 742){
+        $('.single-item').slick();
+    }
+    
+}, 5000)
