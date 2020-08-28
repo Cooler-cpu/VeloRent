@@ -3,53 +3,39 @@ time_complexity = 0;
 tmp = ['b3.png', 'b2.png', 'b1.png'],
 i=0;
 
+//connected slider if user has width below 742
 
 
-console.log("ширина экрана:", window.innerWidth);
 
 
-setInterval(function(){
+window.addEventListener('resize', function(){
 
+        if(window.innerWidth <= 1080 && window.innerWidth >= 520 ){
 
-        //header.style.background = 'url("img/'+"header_mobile.png"+'")';
+                header.style.background = 'url("img/'+"bg_adapt.png"+'")';
+                header.style.backgroundRepeat = 'no-repeat';
+                header.style.backgroundSize = 'cover';
 
-    if(window.innerWidth <= 1080 && window.innerWidth >= 520 ){
+        }
 
-        // if(window.innerWidth <= 515){
-        //     header.style.background = 'url("img/'+"header_mobile.png"+'")';
-        //     header.style.backgroundRepeat = 'no-repeat';
-        //     header.style.backgroundPosition = 'center';
-            
-        // }
-        // else{
-
-            header.style.background = 'url("img/'+"bg_adapt.png"+'")';
-            header.style.backgroundRepeat = 'no-repeat';
-            header.style.backgroundSize = 'cover';
-            console.log("2");
-
-       
-
-    }
-
-},2000);
+});
 
 setInterval(function(){
     
         
     if(window.innerWidth > 1080){
 
-                //console.log(header.classList);
+                
                 header.classList.remove('anim');
                 header.classList.add('anim2');
 
-            // header.classList.remove('anim');
+            
                 setTimeout(() => {
                 
                     header.classList.add('anim');
                 if (i==tmp.length)
                     i=0;
-                //console.log(i);
+              
                 header.style.background = 'url("img/'+tmp[i]+'")';
                 header.style.backgroundRepeat = 'no-repeat';
                 header.style.backgroundSize = 'cover';
@@ -89,12 +75,19 @@ close_modal_window = () => {
 
 //slider for mobile
 
-slide_left =() => {
-    console.log("left");
+
+// slide on left site
+slide_left = () => {
+    console.log("1");
+    $("one-time").slickPrev();
+    
 }
 
+// slide on right side 
+
 slide_right = () => {
-    console.log("right");
+
+    $('one-time').slick('slickNext');
 }
 
 
@@ -166,9 +159,77 @@ $(fix_arrows = () =>{
 
 });
 
-setInterval(function(){
-    if(window.innerWidth < 742){
-        $('.single-item').slick();
-    }
+
+$(function() {
+
     
-}, 5000)
+    if($(window).height()<742) {
+        slider_connect();
+    }
+});
+
+
+
+window.addEventListener('resize', function(){
+        let width = $(window).width();
+        
+        slider_connect(width);
+
+});
+
+
+
+slider_connect = (width) => {
+    if(width < 742 ){
+        slider_on();
+    }
+
+    if (width > 742){
+        slider_off();
+    }
+
+}
+
+
+
+
+//single-item
+
+window.slider_on = () => { 
+
+    $('.one-time').slick({ 
+        infinite: true,
+        speed: 400,
+        slidesToShow: 1,
+        adaptiveHeight: true
+      }); 
+
+    $('.single-item').slick();
+
+    fix_size();
+      
+}
+
+window.slider_off = () => {
+
+    $('.one-time').slick('unslick');
+
+    $('.single-item').slick('unslick');
+
+}
+    
+// Исправляем недостаток slick js
+
+window.fix_size = () => {
+    var items = $(".slick-list");
+
+    items[0].style="height: 400px";
+}
+
+
+// fix slick-list size bag
+
+
+
+
+    //class="slick-next slick-arrow"

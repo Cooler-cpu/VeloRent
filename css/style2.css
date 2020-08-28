@@ -1,0 +1,84 @@
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.equipment_title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+  margin-top: 60px;
+  margin-bottom: 44px;
+}
+
+.equipment_title br {
+  display: none;
+}
+
+.equipment_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 0px;
+}
+
+.equipment_wraper .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.equipment_wraper .item .helmet_img {
+  margin-bottom: 18px;
+}
+
+.equipment_wraper .item .lock_img {
+  margin-bottom: 48px;
+}
+
+.equipment_wraper .item .armchair_img {
+  margin-bottom: 7px;
+}
+
+.equipment_wraper .item .trailer_img {
+  margin-bottom: 16px;
+}
+
+.equipment_wraper .item .lamp_img {
+  margin-bottom: 27px;
+}
+
+.equipment_wraper .item .gloves_img {
+  margin-bottom: 25px;
+}
+
+.equipment_wraper .item .item_title {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 9px;
+}
+
+.equipment_wraper .item .item_price {
+  font-size: 20px;
+  line-height: 23px;
+  color: #00CD4A;
+  margin-bottom: 9px;
+}
+
+.equipment_wraper .item .item_time {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+}
+/*# sourceMappingURL=style2.css.map */

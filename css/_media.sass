@@ -27,6 +27,7 @@
 @media (max-width: 1110px)
     .cards_wraper
         justify-content: center
+
     .equipment_wraper
         justify-content: center
     .item_helmet
@@ -234,7 +235,7 @@
     
         
 
-@media (max-width: 740px)
+@media (max-width: 757px)
 
 
 
@@ -270,6 +271,15 @@
     
     .arrows_img
         display: flex
+
+    .arrows_img_1_2
+        display: flex
+
+    .arrows_img_1_3
+        display: flex
+
+    .arrows_img_3
+        display: flex
     
     .rent_instruct_box 
         margin-left: 20px
@@ -283,11 +293,12 @@
         .cards_wraper
 
             .cards_wraper_content
+                border: none
 
                 .cards_wraper_content_display
                     
                         
-
+    
                    
             
                 
@@ -297,7 +308,8 @@
 
     // start of slider development /////////////!!!!!!!!//////////
 
-
+    .fix-slick-size
+        height: 392px !important
 
 
     .card_1
@@ -319,31 +331,35 @@
 
     //adaptive equipment section
     //and development slider
+    .equipment
+        display: block
+
     .equipment_wraper
-        flex-direction: column
+        flex-direction: row //column
+        flex-wrap: nowrap
 
     .item_helmet
         margin-left: 0px
 
     .item_lock
         margin-left: 0px
-        display: none !important
+        //display: none !important
         
     .item_armchair
         margin-left: 0px
-        display: none !important
+        //display: none !important
        
     .item_trailer
         margin-left: 0px
-        display: none !important
+        //display: none !important
         
     .item_lamp
         margin-left: 0px
-        display: none !important
+        //display: none !important
         
     .item_gloves
         margin-left: 0px
-        display: none !important
+        //display: none !important
         
 
 
@@ -576,7 +592,7 @@
         
        
 
-@media (max-width: 425px)
+@media (max-width: 757px)
     
     .main_content
 
@@ -584,10 +600,11 @@
             display: none
 
     .cards_wraper_content
-        width: 270px !important
-        min-height: 352px !important
+        // width: 270px !important
+        // min-height: 352px !important
         margin-left: 0px
-        
+        align-items: center
+
             // img
             //     display: none
         .cards_wraper_content_display
@@ -607,7 +624,8 @@
             
 
     .cards_wraper_content_display_description_button
-        margin-left: 45px
+        margin: auto
+        margin-top: 20px
 
 
     .button
@@ -623,7 +641,7 @@
         height: 180px
         
         img
-            display: none
+            display: none !important
 
     .velo_img_2
         background: url('../img/velo_img_mobile_2.png') no-repeat
@@ -631,7 +649,7 @@
         height: 180px
 
         img
-            display: none
+            display: none !important
 
     .velo_img_3
         background: url('../img/velo_img_mobile_3.png') no-repeat
@@ -639,16 +657,16 @@
         height: 180px
 
         img
-            display: none
+            display: none !important
 
 
     .velo_img_4
         background: url('../img/velo_img_mobile_4.png') no-repeat
         width: 290px
-        height: 184px
+        height: 189px
 
         img
-            display: none
+            display: none !important
 
         
 
@@ -659,7 +677,7 @@
         height: 180px
 
         img
-            display: none
+            display: none !important
     
     .velo_img_6
         background: url('../img/velo_img_mobile_6.png') no-repeat
@@ -667,7 +685,7 @@
         height: 180px
 
         img
-            display: none
+            display: none !important
 
     
     .velo_img_7
@@ -675,7 +693,7 @@
         width: 280px
         height: 180px
         img
-            display: none
+            display: none !important
 
     .velo_img_8
         background: url('../img/velo_img_mobile_8.png') no-repeat
@@ -683,43 +701,44 @@
         height: 183px
 
         img
-            display: none
+            display: none !important
 
 
     .velo_img_9
         background: url('../img/velo_img_mobile_9.png') no-repeat
-        width: 302px
+        width: 305px
         height: 180px
         img
-            display: none
+            display: none !important
 
     .velo_img_10
         background: url('../img/velo_img_mobile_10.png') no-repeat
         width: 290px
         height: 180px
         img
-            display: none
+            display: none !important
     
     .velo_img_11
         background: url('../img/velo_img_mobile_11.png') no-repeat
         width: 290px
         height: 185px
         img
-            display: none
+            display: none !important
         
     .velo_img_12
         background: url('../img/velo_img_mobile_12.png') no-repeat
         width: 305px
         height: 180px
         img
-            display: none
+            display: none !important
     
             
-    .arrows_img
-        width: 305px !important
 
     .arrows_img_2
         display: flex
+
+
+    
 
     .rent_title
         display: none

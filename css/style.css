@@ -284,6 +284,10 @@ a:hover {
           flex-direction: row;
 }
 
+.fix-margin {
+  margin-top: 15px;
+}
+
 .price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,21 +340,40 @@ a:hover {
 .arrows_img {
   display: none;
   position: absolute;
-  width: 330px;
+  width: 260px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 120px;
+  margin-top: 470px;
 }
 
 .arrows_img_2 {
   display: none;
   position: absolute;
-  width: 305px;
+  width: 330px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 200px;
+  margin-left: 220px;
+}
+
+.arrows_img_3 {
+  display: none;
+  position: absolute;
+  width: 250px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-bottom: 20px;
+}
+
+.arrow_fix {
+  margin-top: 100px;
+  width: 260px !important;
 }
 
 .cards {
@@ -495,6 +518,26 @@ a:hover {
   margin-bottom: 5px;
 }
 
+.arrows_img_1_2 {
+  display: none;
+  position: absolute;
+  width: 260px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 970px;
+}
+
+.arrows_img_1_3 {
+  display: none;
+  position: absolute;
+  width: 260px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1470px;
+}
+
 .rent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -592,6 +635,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10px !important;
 }
 
 .equipment_title {
@@ -640,6 +684,8 @@ a:hover {
 
 .equipment_wraper .item .armchair_img {
   margin-bottom: 7px;
+  margin-top: 9px;
+  width: 245px;
 }
 
 .equipment_wraper .item .trailer_img {
@@ -747,8 +793,49 @@ a:hover {
   line-height: 28px;
 }
 
+.slick-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-list {
+  max-width: 300px !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+.slick-track {
+  min-width: 0;
+}
+
 .footer {
   max-width: 1140px;
+}
+
+.slick-slide {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.slick-slide:focus {
+  outline: none !important;
+}
+
+.slick-arrow {
+  display: none !important;
+  position: absolute !important;
+  width: 230px !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  margin-top: 120px !important;
+}
+
+.slick-prev {
+  left: 0;
+  background: "../img/vector_left.png" no-repeat;
 }
 
 @media (max-width: 1176px) {
@@ -950,7 +1037,7 @@ a:hover {
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 757px) {
   .main_content_subtitle p {
     font-size: 25px;
   }
@@ -981,11 +1068,32 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
   }
+  .arrows_img_1_2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .arrows_img_1_3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .arrows_img_3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .rent_instruct_box {
     margin-left: 20px;
   }
   .cards .cards_title {
     padding: 60px 0px 0px 0px;
+  }
+  .cards .cards_wraper .cards_wraper_content {
+    border: none;
+  }
+  .fix-slick-size {
+    height: 392px !important;
   }
   .card_2 {
     display: none;
@@ -1002,34 +1110,34 @@ a:hover {
   .card_6 {
     display: none;
   }
+  .equipment {
+    display: block;
+  }
   .equipment_wraper {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .item_helmet {
     margin-left: 0px;
   }
   .item_lock {
     margin-left: 0px;
-    display: none !important;
   }
   .item_armchair {
     margin-left: 0px;
-    display: none !important;
   }
   .item_trailer {
     margin-left: 0px;
-    display: none !important;
   }
   .item_lamp {
     margin-left: 0px;
-    display: none !important;
   }
   .item_gloves {
     margin-left: 0px;
-    display: none !important;
   }
 }
 
@@ -1214,14 +1322,15 @@ a:hover {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 757px) {
   .main_content_subtitle {
     display: none;
   }
   .cards_wraper_content {
-    width: 270px !important;
-    min-height: 352px !important;
     margin-left: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .cards_wraper_content_display_title {
     font-size: 20px;
@@ -1237,7 +1346,8 @@ a:hover {
     margin-top: 15px;
   }
   .cards_wraper_content_display_description_button {
-    margin-left: 45px;
+    margin: auto;
+    margin-top: 20px;
   }
   .button {
     width: 175px !important;
@@ -1249,7 +1359,7 @@ a:hover {
     height: 180px;
   }
   .velo_img_1 img {
-    display: none;
+    display: none !important;
   }
   .velo_img_2 {
     background: url("../img/velo_img_mobile_2.png") no-repeat;
@@ -1257,7 +1367,7 @@ a:hover {
     height: 180px;
   }
   .velo_img_2 img {
-    display: none;
+    display: none !important;
   }
   .velo_img_3 {
     background: url("../img/velo_img_mobile_3.png") no-repeat;
@@ -1265,15 +1375,15 @@ a:hover {
     height: 180px;
   }
   .velo_img_3 img {
-    display: none;
+    display: none !important;
   }
   .velo_img_4 {
     background: url("../img/velo_img_mobile_4.png") no-repeat;
     width: 290px;
-    height: 184px;
+    height: 189px;
   }
   .velo_img_4 img {
-    display: none;
+    display: none !important;
   }
   .velo_img_5 {
     background: url("../img/velo_img_mobile_5.png") no-repeat;
@@ -1281,7 +1391,7 @@ a:hover {
     height: 180px;
   }
   .velo_img_5 img {
-    display: none;
+    display: none !important;
   }
   .velo_img_6 {
     background: url("../img/velo_img_mobile_6.png") no-repeat;
@@ -1289,7 +1399,7 @@ a:hover {
     height: 180px;
   }
   .velo_img_6 img {
-    display: none;
+    display: none !important;
   }
   .velo_img_7 {
     background: url("../img/velo_img_mobile_7.png") no-repeat;
@@ -1297,7 +1407,7 @@ a:hover {
     height: 180px;
   }
   .velo_img_7 img {
-    display: none;
+    display: none !important;
   }
   .velo_img_8 {
     background: url("../img/velo_img_mobile_8.png") no-repeat;
@@ -1305,15 +1415,15 @@ a:hover {
     height: 183px;
   }
   .velo_img_8 img {
-    display: none;
+    display: none !important;
   }
   .velo_img_9 {
     background: url("../img/velo_img_mobile_9.png") no-repeat;
-    width: 302px;
+    width: 305px;
     height: 180px;
   }
   .velo_img_9 img {
-    display: none;
+    display: none !important;
   }
   .velo_img_10 {
     background: url("../img/velo_img_mobile_10.png") no-repeat;
@@ -1321,7 +1431,7 @@ a:hover {
     height: 180px;
   }
   .velo_img_10 img {
-    display: none;
+    display: none !important;
   }
   .velo_img_11 {
     background: url("../img/velo_img_mobile_11.png") no-repeat;
@@ -1329,7 +1439,7 @@ a:hover {
     height: 185px;
   }
   .velo_img_11 img {
-    display: none;
+    display: none !important;
   }
   .velo_img_12 {
     background: url("../img/velo_img_mobile_12.png") no-repeat;
@@ -1337,10 +1447,7 @@ a:hover {
     height: 180px;
   }
   .velo_img_12 img {
-    display: none;
-  }
-  .arrows_img {
-    width: 305px !important;
+    display: none !important;
   }
   .arrows_img_2 {
     display: -webkit-box;
