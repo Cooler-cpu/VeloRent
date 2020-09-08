@@ -6,7 +6,7 @@ i=0;
 //connected slider if user has width below 742
 
 
-
+window.onload
 
 window.addEventListener('resize', function(){
 
@@ -90,9 +90,6 @@ slide_right = () => {
     $('one-time').slick('slickNext');
 }
 
-
-
-
 // jquery slow scroll to id
 
 jQuery(document).ready(function($){
@@ -159,25 +156,12 @@ $(fix_arrows = () =>{
 
 });
 
-
-$(function() {
-
-    
-    if($(window).height()<742) {
-        slider_connect();
-    }
-});
-
-
-
 window.addEventListener('resize', function(){
         let width = $(window).width();
         
         slider_connect(width);
 
 });
-
-
 
 slider_connect = (width) => {
     if(width < 742 ){
@@ -189,9 +173,6 @@ slider_connect = (width) => {
     }
 
 }
-
-
-
 
 //single-item
 

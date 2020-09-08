@@ -12,10 +12,8 @@
 .anim2
     opacity: 1
     transition: 1s opacity
-//Допилить анимацию
-     
 
-//Основной шрифт
+
 .fonts_main 
     font-family: Ubuntu
     font-style: normal
@@ -30,24 +28,25 @@ a
     &:hover
         text-decoration: none
 
-контейнер    
+  
 .container
     max-width: 1170px
     margin: 0 auto
 
 
-//Основная кнопка
+//main button
 .button
     width: 380px
     height: 70px 
     border-radius: 4px
     background: #00CD4A
     border-style: none
+    cursor: pointer
+
     .button_text
         font-weight: 500
         color: #ffffff
 
-//Модальное окно
 .modal_window
     width: 100%
     height: 100%
@@ -56,8 +55,8 @@ a
     background-color: rgba(47, 79, 79, 0.4)
     top: 0px
     right: 0px
+    z-index: 999999
 
-    //need to add animation
 
     .modal_content_wrapper
         transform: translate(-50%,-50%)
@@ -112,7 +111,6 @@ a
 .header
     height: 620px
     background: url('../img/b1.png')  no-repeat 
-    //Анимация, плавный переход
     
 
     &_main
@@ -121,7 +119,6 @@ a
         align-items: center
     &_logo
         background: url
-        //margin-right: 115px
         background: url('../img/VeloRent.png') no-repeat 
         width: 134px
         height: 34px
@@ -139,14 +136,12 @@ a
         line-height: 28px
         margin-left: 105px
     &_wrapper
-        display: none//display: flex
+        display: none
         flex-direction: column
-        //width: 540px
-        //Сверху справа снизу слева
         padding: 68px 100px 0px 310px 
         
         &_content
-            //text-align: center
+            
             p
                 
                 font-weight: 500
@@ -179,7 +174,7 @@ a
     &_content
         margin: 0 auto
         padding: 40px 0px 0px 0px
-        //Сверху справа снизу слева
+        
         display: flex
         align-items: center
         flex-direction: column
@@ -206,12 +201,12 @@ a
                 margin-top: 0px
                 &:first-child
                     
-                    margin-bottom: 10px //костыль
+                    margin-bottom: 10px 
 
                  
             
             &_text
-                //margin-top: 12px
+                
                 font-size: 20px
                 line-height: 23px
             &_text2
@@ -226,8 +221,7 @@ a
             display: flex
             flex-direction: row
 
-.fix-margin
-    margin-top: 15px
+
 
 .price
     display: flex
@@ -251,21 +245,22 @@ a
             margin-bottom: 5px
         &_prices
             margin-right: 5px
-            //Наследует от &_time
+            
 
 
 .description_line
     border-bottom:  1px dashed #C4C4C7
+
+.line_break
+    margin-bottom: 19px
     
-// arrows style for slider ///////!!!!///////
+
 .arrows_img
     display: none
     position: absolute
     width: 260px
     justify-content: space-between
     margin-top: 470px
-
-
 
 
 .left_arrow
@@ -287,7 +282,7 @@ a
 .arrows_img_3
     display: none
     position: absolute
-    width: 250px
+    width: 500px
     justify-content: space-between
     left: 50%
     transform: translate(-50%, -50%)
@@ -304,9 +299,8 @@ a
     display: flex 
     flex-direction: column
     flex-wrap: wrap
-    //justify-content: center
     align-items: center
-    //align-content: center
+    
     
 
     &_title
@@ -320,7 +314,7 @@ a
         font-size: 24px
         line-height: 28px
         color: #00CD4A
-        //margin-left: 42px ломает страницу
+        
         width: 94%
         margin-top: 20px
         padding-bottom: 20px
@@ -328,10 +322,11 @@ a
     &_wraper
         display: flex
         flex-wrap: wrap
-        margin-bottom: 20px //допилить
+        margin-bottom: 20px 
+        padding-left: 30px
 
         &_content
-            display: flex //Посмотреть какие команды ненужны випилить
+            display: flex 
             flex-direction: column
             margin-left: 20px
             margin-bottom: 20px
@@ -364,7 +359,7 @@ a
 
                 &_description_wheels
                     display: flex
-                    margin-bottom: 4px //p-p for deststop
+                    margin-bottom: 4px 
                     .description_line
                         width: 35px
                 &_description_weight
@@ -374,13 +369,17 @@ a
                         width: 61px
                 &_description_break
                     display: flex
+                    margin-bottom: 20px
                     .description_line
                         width: 32px
                 &_description_button
-                    margin-top: 30px
+                    //margin-top: 30px
                     .button
                         width: 280px
                         height: 44px
+
+// .desc_butt_fix
+//     margin-top: 48px
 
 .margin_fix
     margin-bottom: 5px 
@@ -440,6 +439,9 @@ a
             &_description
                 font-size: 20px
                 line-height: 23px
+
+                br
+                    display: none
         &_row_left
             margin-top: 20px
             margin-left: 47px
@@ -458,8 +460,7 @@ a
     .rent_instruct_box
         display: flex
 
-    // .rent_instruct_row_left
-
+   
     //     background: url('../img/arrow_mobile.png') no-repeat 
     //     width: 40px
         
@@ -470,12 +471,24 @@ a
         .item_2:::after
             background: url('../img/arrow_mobile_right.png') no-repeat 
             width: 40px
-            // transform: rotate(90deg)
+            
             
 
         .img_mobile_2
             display: none
             margin-bottom: 21px
+
+.card_2_title_fix
+    margin-top: 40px
+
+.card_3_title_fix
+    margin-top: 22px
+
+.velo_img_16
+    margin-bottom: 15px
+
+.card_break_fix
+    margin-bottom: 38px
 
 
 .equipment
@@ -504,13 +517,13 @@ a
             display: flex
             flex-direction: column
             align-items: center
-            //margin-right: 50px
+            
             margin-bottom: 30px
 
         
             
             .item_img
-                // margin-bottom: 18px
+                
 
             .helmet_img
                 margin-bottom: 18px
@@ -547,6 +560,19 @@ a
                 font-size: 16px
                 line-height: 18px
         
+.item_lock_fix
+    margin-bottom: 5px
+
+.item_armchair_fix
+    margin-bottom: 8px
+
+.item_lamp_fix
+    margin-bottom: 12px
+
+.item_gloves_fix
+    margin-bottom: 12px
+
+
 
 .item_helmet
     margin-left: 140px
@@ -594,9 +620,9 @@ a
     display: flex
 
 .slick-list
-    //margin: 0 auto
+    
     max-width: 300px !important
-    //height: 300px 
+    
     display: block !important
     margin: 0 auto !important
        

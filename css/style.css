@@ -44,6 +44,7 @@ a:hover {
   border-radius: 4px;
   background: #00CD4A;
   border-style: none;
+  cursor: pointer;
 }
 
 .button .button_text {
@@ -59,6 +60,7 @@ a:hover {
   background-color: rgba(47, 79, 79, 0.4);
   top: 0px;
   right: 0px;
+  z-index: 999999;
 }
 
 .modal_window .modal_content_wrapper {
@@ -284,10 +286,6 @@ a:hover {
           flex-direction: row;
 }
 
-.fix-margin {
-  margin-top: 15px;
-}
-
 .price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,6 +335,10 @@ a:hover {
   border-bottom: 1px dashed #C4C4C7;
 }
 
+.line_break {
+  margin-bottom: 19px;
+}
+
 .arrows_img {
   display: none;
   position: absolute;
@@ -361,7 +363,7 @@ a:hover {
 .arrows_img_3 {
   display: none;
   position: absolute;
-  width: 250px;
+  width: 500px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -415,6 +417,7 @@ a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 20px;
+  padding-left: 30px;
 }
 
 .cards_wraper_content {
@@ -499,14 +502,11 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 20px;
 }
 
 .cards_wraper_content_display_description_break .description_line {
   width: 32px;
-}
-
-.cards_wraper_content_display_description_button {
-  margin-top: 30px;
 }
 
 .cards_wraper_content_display_description_button .button {
@@ -599,6 +599,10 @@ a:hover {
   line-height: 23px;
 }
 
+.rent_instruct_item_description br {
+  display: none;
+}
+
 .rent_instruct_row_left {
   margin-top: 20px;
   margin-left: 47px;
@@ -620,6 +624,22 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.card_2_title_fix {
+  margin-top: 40px;
+}
+
+.card_3_title_fix {
+  margin-top: 22px;
+}
+
+.velo_img_16 {
+  margin-bottom: 15px;
+}
+
+.card_break_fix {
+  margin-bottom: 38px;
 }
 
 .equipment {
@@ -717,6 +737,22 @@ a:hover {
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
+}
+
+.item_lock_fix {
+  margin-bottom: 5px;
+}
+
+.item_armchair_fix {
+  margin-bottom: 8px;
+}
+
+.item_lamp_fix {
+  margin-bottom: 12px;
+}
+
+.item_gloves_fix {
+  margin-bottom: 12px;
 }
 
 .item_helmet {
@@ -1022,6 +1058,9 @@ a:hover {
   }
   .rent_instruct_item_description {
     font-size: 17px;
+  }
+  .rent_instruct_item_description br {
+    display: block;
   }
   .rent_instruct_row_left {
     margin-left: 0px;
