@@ -61,14 +61,12 @@ let modal = document.getElementById("modal_window"),
 open_modal_window = () => {
     modal.style.display = 'block';
     
-    fix_arrows_open();
     
 }
 
 close_modal_window = () => {
     modal.style.display = 'none';
 
-    fix_arrows_back()
 
 }
 
@@ -120,41 +118,6 @@ jQuery(document).ready(function($){
 });
 
 
-$(fix_arrows = () =>{
-    
-    window.fix_arrows_open = () => {
-
-        
-        $('.arrows_img').each(function(index){
-            
-        
-            $(this).css("display", "none" );
-        });
-
-        $('arrows_img_2').each(function(index){
-
-            $(this).css("display", "none" );
-
-        });
-    }
-
-    window.fix_arrows_back = () => {
-        
-        $('.arrows_img').each(function(index){
-            
-        
-            $(this).css("display", "flex" );
-        });
-
-        $('arrows_img_2').each(function(index){
-
-            $(this).css("display", "flex" );
-
-        });
-
-    }
-
-});
 
 window.addEventListener('resize', function(){
         let width = $(window).width();
@@ -164,12 +127,23 @@ window.addEventListener('resize', function(){
 });
 
 slider_connect = (width) => {
-    if(width < 742 ){
+    if(width < 790 ){
         slider_on();
     }
 
-    if (width > 742){
+    if(width < 1000){
+        slider_2_one();
+    }
+
+
+
+    if (width > 790){
         slider_off();
+        
+    }
+
+    if(width > 1000){
+        slider_2_off();
     }
 
 }
@@ -185,21 +159,30 @@ window.slider_on = () => {
         adaptiveHeight: true
       }); 
 
-    $('.single-item').slick();
-
     fix_size();
       
 }
+
+window.slider_2_one = () => {
+    $('.single-item').slick();
+
+}
+
 
 window.slider_off = () => {
 
     $('.one-time').slick('unslick');
 
+}
+
+window.slider_2_off = () => {
+
     $('.single-item').slick('unslick');
 
 }
+
     
-// Исправляем недостаток slick js
+// fix slick js slick js
 
 window.fix_size = () => {
     var items = $(".slick-list");
@@ -208,9 +191,10 @@ window.fix_size = () => {
 }
 
 
-// fix slick-list size bag
+//get cards_wraper::after (button)
+
+var content = window.getComputedStyle(document.querySelector('.cards_wraper'),':after');
 
 
 
 
-    //class="slick-next slick-arrow"

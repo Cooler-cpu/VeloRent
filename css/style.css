@@ -38,6 +38,22 @@ a:hover {
   margin: 0 auto;
 }
 
+.button2 {
+  display: none;
+  width: 252px;
+  height: 34px;
+  border-radius: 4px;
+  background: #00CD4A;
+  border-style: none;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 15px;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
 .button {
   width: 380px;
   height: 70px;
@@ -764,11 +780,11 @@ a:hover {
 }
 
 .item_armchair {
-  margin-left: 110px;
+  margin-left: 134px;
 }
 
 .item_trailer {
-  margin-left: 110px;
+  margin-left: 98px;
 }
 
 .item_lamp {
@@ -874,6 +890,12 @@ a:hover {
   background: "../img/vector_left.png" no-repeat;
 }
 
+@media (max-width: 1190px) {
+  .cards .cards_title {
+    padding: 60px 0px 0px 0px;
+  }
+}
+
 @media (max-width: 1176px) {
   .header_tel {
     margin-left: 98px;
@@ -893,7 +915,7 @@ a:hover {
   }
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1132px) {
   .cards_wraper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1076,7 +1098,7 @@ a:hover {
   }
 }
 
-@media (max-width: 757px) {
+@media (max-width: 806px) {
   .main_content_subtitle p {
     font-size: 25px;
   }
@@ -1131,8 +1153,20 @@ a:hover {
   .cards .cards_wraper .cards_wraper_content {
     border: none;
   }
+  .button2 {
+    display: block;
+  }
+  .cards_wraper {
+    padding-left: 0px;
+  }
+  .slick-track {
+    height: 310px !important;
+  }
+  .rent {
+    margin-top: 40px;
+  }
   .fix-slick-size {
-    height: 392px !important;
+    height: 372px !important;
   }
   .card_2 {
     display: none;
@@ -1361,7 +1395,7 @@ a:hover {
   }
 }
 
-@media (max-width: 757px) {
+@media (max-width: 806px) {
   .main_content_subtitle {
     display: none;
   }
